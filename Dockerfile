@@ -4,7 +4,7 @@ WORKDIR /app
  
 COPY . /app
  
-RUN pip install requirements.txt
+RUN pip install -r requirements.txt
  
 COPY  dataGenerator.py /
 
