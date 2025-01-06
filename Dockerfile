@@ -13,6 +13,6 @@ ENV FLASK_ENV=development
  
 EXPOSE 8000
  
-CMD ["uvicorn", "--reload", "--bind", "0.0.0.0:8000", "dataGenerator:app"]
+CMD ["uvicorn", "--reload", "--host", "0.0.0.0", "--port", "8000", "dataGenerator:app"]
  
  
