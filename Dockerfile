@@ -6,7 +6,7 @@ COPY . /app
  
 RUN pip install -r requirements.txt
  
-COPY  dataGenerator.py /
+COPY  dataGenerator.py /app/
 
 ENV FLASK_APP=dataGenerator.py
 ENV FLASK_ENV=development
