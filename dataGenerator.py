@@ -15,7 +15,7 @@ CARS = {
 
 @app.get("/")
 def root():
-    return {"message":"hello"}
+    return {"message":"Hello visit /generate/users/ or /generate/cars/"}
 
 @app.get("/generate/users/")
 def generate_fake_users(count: int = Query(10)):
